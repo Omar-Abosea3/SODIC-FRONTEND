@@ -1,0 +1,16 @@
+/* الموبايلات الصغيرة */
+@media (max-width: 576px) {
+.col-md-3 img{
+    width: 50% !important;
+
+}
+}
+
+/* التابلت أو الشاشات المتوسطة */
+@media (min-width: 577px) and (max-width: 991px) {
+ .col-md-3 img{
+    width: 50%  !important;
+
+}
+}
+

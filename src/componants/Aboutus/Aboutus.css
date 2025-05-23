@@ -1,0 +1,158 @@
+.aboutus-page {
+  padding-top: 80px; /* تعويض الـNavbar */
+  height: 100vh;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  position: relative;
+}
+
+.aboutus-title {
+  font-size: clamp(2rem, 5vw, 60px);
+  font-weight: bold;
+  transition: all 1s ease;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  color: white;
+  white-space: nowrap;
+  text-align: center;
+  max-width: 90vw;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.aboutus-title.animate {
+  font-size: clamp(1.5rem, 4vw, 30px);
+  top: 20px;
+  transform: translateX(-50%);
+}
+
+.aboutus-image {
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 0;
+  opacity: 0;
+  animation: fadeImage 2s ease forwards;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+  opacity: 0;
+  animation: fadeOverlay 1.5s ease forwards;
+}
+
+.overlay-text {
+  color: white;
+  font-size: 24px;
+  max-width: 600px;
+  text-align: center;
+  padding: 20px;
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeText 1s ease 1.6s forwards;
+}
+
+@keyframes fadeOverlay {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeText {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeImage {
+  from {
+    opacity: 0;
+    transform: scale(1.05);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+/* الموبايلات الصغيرة */
+@media (max-width: 576px) {
+  .aboutus-title {
+    font-size: 1.8rem;
+    top: 15%;
+  }
+
+  .aboutus-title.animate {
+    font-size: 1.2rem;
+    top: 10px;
+  }
+
+  .overlay-text {
+    font-size: 1rem;
+    padding: 10px;
+    max-width: 90%;
+  }
+}
+
+/* التابلت أو الشاشات المتوسطة */
+@media (min-width: 577px) and (max-width: 991px) {
+  .aboutus-title {
+    font-size: 2.5rem;
+    top: 20%;
+  }
+
+  .aboutus-title.animate {
+    font-size: 1.5rem;
+    top: 15px;
+  }
+
+  .overlay-text {
+    font-size: 1.2rem;
+    padding: 15px;
+    max-width: 80%;
+  }
+}
+
+/* الشاشات الكبيرة (ديسكتوب) */
+@media (min-width: 992px) {
+  .aboutus-title {
+    font-size: 3rem;
+    top: 50%;
+  }
+
+  .aboutus-title.animate {
+    font-size: 2rem;
+    top: 20px;
+  }
+
+  .overlay-text {
+    font-size: 1.5rem;
+    max-width: 600px;
+  }
+}

@@ -1,0 +1,8 @@
+.whatsImg{
+    width: 500px;
+    height: 500px;
+    position: fixed;
+
+    z-index: 9999;
+    padding: 30px;
+}

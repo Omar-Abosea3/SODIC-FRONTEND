@@ -1,0 +1,115 @@
+.Servh2 {
+    
+  position: relative;
+  margin: 100px auto 0px;
+  font-size: 8rem;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  width: fit-content;
+  color: #dee3e4;
+
+}
+
+.Servh2::before {
+  content: "Know Me More";
+  color: black;
+  font-size: 2.5rem;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  position: absolute;
+  top: 65%; 
+  left: 50%;
+  transform: translate(-50%, -50%);
+  white-space: nowrap;
+}
+
+.item {
+  position: relative;
+  overflow: hidden;
+  
+}
+
+.LayerSrv {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  transition: height 0.4s ease;
+  z-index: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  overflow: hidden;
+}
+
+.LayerSrv p {
+  opacity: 0;
+  transition: opacity 0.4s ease;
+}
+
+.item:hover .LayerSrv p {
+  opacity: 1;
+}
+
+.item:hover .LayerSrv {
+  height: 50%;
+}
+
+figcaption h2 {
+  z-index: 999;
+}
+
+.figP {
+  z-index: 999;
+  text-decoration: underline;
+  color: #fff; 
+  cursor: pointer;
+  font-size: large;
+  transition: all 0.4s ease;
+}
+
+.figP:hover {
+  color: #ff0000; 
+}
+@media (max-width: 576px) {
+  .Servh2 {
+    
+  
+  font-size: 4rem;
+ 
+
+}
+.Servh2::before {
+ 
+  font-size: 1rem;
+ 
+}
+}
+
+/* التابلت أو الشاشات المتوسطة */
+@media (min-width: 577px) and (max-width: 991px) {
+  .Servh2 {
+    
+  position: relative;
+  margin: 100px auto 0px;
+  font-size:6rem;
+  
+
+}
+.Servh2::before {
+  content: "Know Me More";
+  color: black;
+  font-size: 1rem;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  position: absolute;
+  top: 65%; 
+  left: 50%;
+  transform: translate(-50%, -50%);
+  white-space: nowrap;
+}
+}
+
+/* الشاشات الكبيرة (ديسكتوب) */
+
+

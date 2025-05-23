@@ -1,0 +1,230 @@
+.HeaderSec {
+  background-image: url('../../img(sodic)/img158.jpg');
+  background-size: cover; /* Use cover to maintain aspect ratio */
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 100vh; /* Full viewport height by default */
+  position: relative; /* Ensure layer positions correctly */
+   overflow-x: hidden;
+}
+
+
+.layer {
+  position: absolute;
+  height: 100%; /* Match parent height */
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Transparent overlay */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-align: center;
+  top: 0;
+  left: 0;
+}
+
+.title {
+  font-size: 3rem;
+  margin: 0;
+}
+
+.subtitle {
+  font-size: 1.2rem;
+  margin-top: 1rem;
+}
+
+/* From Uiverse.io by AlimurtuzaCodes */
+.btn {
+  border: none;
+  width: 12em;
+  height: 4em;
+  border-radius: 3em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  background: #1C1A1C;
+  cursor: pointer;
+  transition: all 450ms ease-in-out;
+  text-decoration: none !important;
+}
+
+.sparkle {
+  fill: #AAAAAA;
+  transition: all 800ms ease;
+}
+
+.text {
+  text-decoration: none !important;
+  font-weight: 600;
+  color: #AAAAAA;
+  font-size: medium;
+}
+
+a {
+  text-decoration: none !important;
+}
+
+.btn:hover {
+  background: linear-gradient(0deg, #6693e6, #0089B4);
+  box-shadow: inset 0px 1px 0px 0px rgba(255, 255, 255, 0.4),
+              inset 0px -4px 0px 0px rgba(0, 0, 0, 0.2),
+              0px 0px 0px 4px rgba(255, 255, 255, 0.2),
+              0px 0px 180px 0px #0089B4;
+  transform: translateY(-2px);
+}
+
+.btn:hover .text {
+  color: white;
+}
+
+.btn:hover .sparkle {
+  fill: white;
+  transform: scale(1.2);
+}
+
+/* Media Queries for Responsiveness */
+
+/* Extra Small Devices (≤576px, small phones) */
+@media (max-width: 576px) {
+  .HeaderSec {
+    height: 80vh; /* Reduce height for small screens */
+    background-size: cover; /* Ensure image covers without distortion */
+  }
+
+  .layer {
+    height: 100%; /* Match parent */
+    padding: 1rem; /* Add padding for content */
+  }
+
+  .title {
+    font-size: 1.8rem; /* Smaller title */
+  }
+
+  .subtitle {
+    font-size: 0.9rem; /* Smaller subtitle */
+    margin-top: 0.8rem;
+  }
+
+  .btn {
+    width: 9em; /* Smaller button */
+    height: 3em;
+    border-radius: 2em;
+    gap: 8px;
+  }
+
+  .text {
+    font-size: 0.8rem; /* Smaller button text */
+  }
+
+  .sparkle {
+    transform: scale(0.8); /* Slightly smaller icon */
+  }
+
+  .btn:hover .sparkle {
+    transform: scale(1); /* Adjust hover scale */
+  }
+}
+
+/* Small Devices (≤768px, larger phones/small tablets) */
+@media (max-width: 768px) and (min-width: 577px) {
+  .HeaderSec {
+    height: 90vh; /* Slightly reduced height */
+  }
+
+  .layer {
+    padding: 1.5rem;
+  }
+
+  .title {
+    font-size: 2.2rem;
+  }
+
+  .subtitle {
+    font-size: 1rem;
+    margin-top: 0.9rem;
+  }
+
+  .btn {
+    width: 10em;
+    height: 3.5em;
+    border-radius: 2.5em;
+  }
+
+  .text {
+    font-size: 0.9rem;
+  }
+}
+
+/* Medium Devices (≤992px, tablets) */
+@media (max-width: 992px) and (min-width: 769px) {
+  .HeaderSec {
+    height: 100vh; /* Keep full height */
+  }
+
+  .layer {
+    padding: 2rem;
+  }
+
+  .title {
+    font-size: 2.5rem;
+  }
+
+  .subtitle {
+    font-size: 1.1rem;
+  }
+
+  .btn {
+    width: 11em;
+    height: 3.8em;
+  }
+
+  .text {
+    font-size: 1rem;
+  }
+}
+
+/* Large Devices (≤1200px, small desktops) */
+@media (max-width: 1200px) and (min-width: 993px) {
+  .HeaderSec {
+    height: 100vh;
+  }
+
+  .title {
+    font-size: 2.8rem;
+  }
+
+  .subtitle {
+    font-size: 1.15rem;
+  }
+
+  .btn {
+    width: 11.5em;
+    height: 3.9em;
+  }
+}
+
+/* Extra Large Devices (>1200px, large desktops) */
+@media (min-width: 1201px) {
+  .HeaderSec {
+    height: 100vh; /* Default full height */
+  }
+
+  .layer {
+    padding: 2rem;
+  }
+
+  .title {
+    font-size: 3rem; /* Default */
+  }
+
+  .subtitle {
+    font-size: 1.2rem; /* Default */
+  }
+
+  .btn {
+    width: 12em; /* Default */
+    height: 4em; /* Default */
+  }
+}
