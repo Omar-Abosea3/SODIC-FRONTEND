@@ -70,7 +70,7 @@ export default function Services() {
           </Link>
                 </figcaption>
               </figure>
-              <img className='w-25' src={`${unit.des_Img}`} alt="" />
+              
             </div>
           </motion.div>)}
 

@@ -1,11 +1,13 @@
 .HeaderSec {
-  background-image: url('../../img(sodic)/img158.jpg');
+  background-image: url('../../assets/ogami/Ogami - Brochure.pdf-image-0366.jpg');
   background-size: cover; /* Use cover to maintain aspect ratio */
   background-repeat: no-repeat;
   background-position: center;
   height: 100vh; /* Full viewport height by default */
   position: relative; /* Ensure layer positions correctly */
    overflow-x: hidden;
+   margin: auto;
+   text-align: center;
 }
 
 
@@ -83,6 +85,16 @@ a {
   fill: white;
   transform: scale(1.2);
 }
+.subtitle {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 500;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+}
+
 
 /* Media Queries for Responsiveness */
 

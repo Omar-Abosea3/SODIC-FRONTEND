@@ -1,5 +1,5 @@
 import React from 'react';
-import { X, Home, Phone, Mail, MapPin } from 'lucide-react';
+import { X, Phone, Mail } from 'lucide-react';
 
 export const MobileMenu = ({ isOpen, onClose, navItems }) => {
   if (!isOpen) return null;
@@ -9,8 +9,11 @@ export const MobileMenu = ({ isOpen, onClose, navItems }) => {
       <div className="position-fixed top-0 start-0 h-100 bg-white shadow" style={{ width: '16rem' }}>
         <div className="d-flex align-items-center justify-content-between p-3 border-bottom">
           <div className="d-flex align-items-center">
-            <Home className="me-2 text-primary" size={24} />
-            <span className="h5 mb-0 fw-bold text-dark">EstateHub</span>
+            <img
+              style={{ height: '40px', width: 'auto' }} // أبعاد مناسبة للصورة
+              src={require("../../img(sodic)/SODIC_Logo_Teal_RGB.png")}
+              alt="SodicLogo"
+            />
           </div>
           <button
             onClick={onClose}
@@ -47,15 +50,11 @@ export const MobileMenu = ({ isOpen, onClose, navItems }) => {
           <div className="d-flex flex-column gap-2">
             <div className="d-flex align-items-center">
               <Phone size={16} className="me-2 text-muted" />
-              <small className="text-muted">(555) 123-4567</small>
+              <small className="text-muted">01229491531</small>
             </div>
             <div className="d-flex align-items-center">
               <Mail size={16} className="me-2 text-muted" />
               <small className="text-muted">info@estatehub.com</small>
-            </div>
-            <div className="d-flex align-items-center">
-              <MapPin size={16} className="me-2 text-muted" />
-              <small className="text-muted">123 Real Estate Ave</small>
             </div>
           </div>
         </div>

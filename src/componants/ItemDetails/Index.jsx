@@ -17,6 +17,7 @@ export default function ItemDetails() {
   }
 
   return (
+    
     <div className="container-fluid my-4" >
       <div className="mb-2 ">
         <h1 className="text-black mb-4" >
