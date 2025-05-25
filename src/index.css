@@ -51,6 +51,10 @@ body{
   color: #0089B4 !important;
 }
 
+#information .accordion h5{
+  font-size: 24px !important;
+  color: #0089B4 !important;
+}
 .iconBox{
   transition: all 0.3s ease;
   cursor: pointer;
@@ -58,4 +62,15 @@ body{
 .iconBox:hover{
   color: white !important;
   background-color: #0089B4 !important;
+}
+
+@media screen and (max-width: 768px) {
+  .swiper-pagination-bullet {
+    width: 10px;
+    height: 10px;
+    margin: 0 4px; /* spacing between dots */
+  }
+  #information .accordion h5,.accordion span{
+    font-size: 12px !important;
+  }
 }

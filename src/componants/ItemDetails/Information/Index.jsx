@@ -7,6 +7,7 @@ import PropertyDetails from './PropertyDetails';
 import AmenitiesAndFeatures from './AmenitiesAndFeatures';
 import Location from './Location';
 import FloorAcoorition from './FloorAcoorition';
+import DownloadPDF from './DownloadPDF';
 const Information = ({unit}) => {
   return (
     <div id='information'>
@@ -18,6 +19,7 @@ const Information = ({unit}) => {
         <AmenitiesAndFeatures/>
         <Location unit={unit} />
         <FloorAcoorition/>
+        <DownloadPDF path={unit.pdfUrl || '/files/1.pdf'}/>
     </div>
   )
 }

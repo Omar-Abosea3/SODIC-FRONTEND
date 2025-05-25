@@ -3,7 +3,7 @@ import Accordion from "react-bootstrap/Accordion";
 
 function FloorAcoorition() {
   return (
-    <div >
+    <div className="mb-5 accordion">
       <Accordion >
         <Accordion.Item eventKey="0">
           <Accordion.Header>
@@ -46,6 +46,7 @@ function FloorAcoorition() {
           </Accordion.Body>
         </Accordion.Item>
       </Accordion>
+       <div className="w-100 bg-body-secondary my-5" style={{height:"1px"}}></div>
     </div>
   );
 }
