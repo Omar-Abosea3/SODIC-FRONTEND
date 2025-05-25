@@ -41,7 +41,7 @@ function FocusOnSelect({ images }) {
   return (
     <div className="slider-wrapper py-10 px-4 max-w-6xl mx-auto">
       <Slider {...settings}>
-        {images.map((img, idx) => (
+        {[...images , ...images].map((img, idx) => (
           <div key={idx} className="image-slide">
             <img src={img} alt={`unit-${idx}`} className="slider-image" />
           </div>

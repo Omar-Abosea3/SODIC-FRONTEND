@@ -1,6 +1,61 @@
-
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 *{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+}
+body{
+  overflow-x: hidden;
+}
+.swiper-slide{
+  border-radius: 12px !important;
+}
+.swiper-slide img{
+  border-radius: 12px !important;
+}
+/* Base bullet style */
+.swiper-pagination-bullet {
+  width: 14px;
+  height: 14px;
+  background-color: #ccc;
+  opacity: 1;
+  margin: 0 6px; /* spacing between dots */
+  transition: background-color 0.3s ease;
+}
+
+/* Active bullet */
+.swiper-pagination-bullet-active {
+  background-color: #0089B4;
+  transform: scale(1.2); /* slightly enlarge active one */
+}
+
+.hover-text{
+  transition: color 0.3s ease-in-out;
+  font-size: 3rem;
+}
+.hover-text:hover {
+  color: #0089B4; /* Bootstrap primary color */
+}
+
+.navbar{
+  background: rgba(255, 255, 255, 0.2); /* semi-transparent background */
+  backdrop-filter: blur(8px); /* blurred background */
+  -webkit-backdrop-filter: blur(8px); /* Safari support */
+  border: 1px solid rgba(255, 255, 255, 0.3);
+   transition: all 0.3s ease;
+}
+
+#information h5{
+  font-size: 24px !important;
+  color: #0089B4 !important;
+}
+
+.iconBox{
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+.iconBox:hover{
+  color: white !important;
+  background-color: #0089B4 !important;
 }

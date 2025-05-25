@@ -11,7 +11,7 @@ export default function Footer() {
   };
 
   return (
-    <div className="container-fluid footer bg-dark mt-5 py-5">
+    <div className="container-fluid footer bg-dark  py-5">
       <div className="row d-flex justify-content-center align-items-center">
         <motion.div
           className="col-md-3 text-center"

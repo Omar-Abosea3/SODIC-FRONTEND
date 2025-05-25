@@ -7,7 +7,7 @@ import { motion } from 'framer-motion';
 export default function Contactus() {
   return <>
   
-  <ContactForm/>
+  <ContactForm width={null}/>
   
   
   

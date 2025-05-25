@@ -2,14 +2,15 @@ import React, { useState, useEffect } from 'react';
 import './App.css';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 
-import Layout from './componants/Navbar/Layout/Layout';
+
 import Home from './componants/Home/Home';
-import Notfound from './componants/NotFound/NotFound';
 import Contactus from './componants/ContactUs/Contactus';
 import Aboutus from './componants/Aboutus/Aboutus';
 import Loadingscreen from './componants/Loadingscreen/Loadingscreen';
-import ItemDetails from './componants/ItemDetails/ItemDetails';
+import ItemDetails from './componants/ItemDetails/Index';
 import { Toaster } from 'react-hot-toast';
+import Layout from './componants/Layout/Layout';
+import NotFound from './componants/NotFound/NotFound';
 
 function App() {
   const [loading, setLoading] = useState(true);
@@ -34,7 +35,7 @@ function App() {
         { path: "aboutus", element: <Aboutus /> },
         { path: "loadingscreen", element: <Loadingscreen /> },
         { path: "units/:id", element: <ItemDetails /> },
-        { path: "*", element: <Notfound /> },
+        { path: "*", element: <NotFound /> },
       ],
     },
   ]);
@@ -45,7 +46,7 @@ function App() {
   }
 
   return <>
-  <Toaster position="top-center" />
+    <Toaster position="top-center" />
     <RouterProvider router={router} />
   </>;
 }
