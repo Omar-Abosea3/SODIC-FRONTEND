@@ -6,7 +6,7 @@ import Services from '../Services/Services';
 import FloatingIcons from '../ContactIcon/ContactIcon';
 
 export default function Home() {
-  const words = ['Dream home', 'Perfect home','luxurious home'];
+  const words = ['Dream home', 'Perfect home','luxury home'];
   const [index, setIndex] = useState(0);
 
   useEffect(() => {

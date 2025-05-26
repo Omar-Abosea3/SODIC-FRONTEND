@@ -1,3 +1,6 @@
+import { Bath, Bed, BedDouble } from "lucide-react";
+import Accordion from "react-bootstrap/Accordion";
+
 const LocationData = [
     {
         label:'Address',
@@ -36,14 +39,27 @@ const Location = ({unit}) => {
                 loading="lazy"
             ></iframe>
         </div>
-        <div className="d-flex align-items-center justify-content-between gap-2 flex-wrap">
-            {LocationData.map((item, index) => <div key={index} style={{minWidth:"48%"}}>
-                <div className="w-100 d-flex justify-content-between align-items-center gap-2">
-                    <span className="fw-bold">{item.label}</span>
-                    <span className="text-muted">{item.value}</span>
+         <div className="mb-5 accordion">
+      <Accordion >
+        <Accordion.Item eventKey="0">
+          <Accordion.Header>
+            <div className="d-flex align-items-center justify-content-between gap-2 w-100">
+                <h5>Advantge Of Location</h5>
+                <div className="d-flex align-items-center gap-2">
+                    
+                    
                 </div>
-            </div>)}
-        </div>
+            </div>
+          </Accordion.Header>
+          <Accordion.Body>
+            <img src={unit.Adv_img} className="w-100 h-100 object-fit-cover rounded-2" alt="demo" />
+          </Accordion.Body>
+        </Accordion.Item>
+        
+      
+      </Accordion>
+       <div className="w-100 bg-body-secondary my-5" style={{height:"1px"}}></div>
+    </div>
         <div className='my-5 w-100 bg-body-secondary' style={{height:"1px"}}></div>
       </div>
   )

@@ -9,6 +9,24 @@
 
 }
 
+.card-body .btn{
+  
+  background-color: #0089B4;
+  color: #fff;
+}
+.card-body .btn:hover{
+  
+  background-color: #63c1dd;
+color: #fff;
+}
+
+/* .card{
+  transition: all 0.3s ease-in-out;
+}
+.card:hover img {
+transform: scale(1.1);
+} */
+
 .Servh2::before {
   content: "Know Me More";
   color: black;

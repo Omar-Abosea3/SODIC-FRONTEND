@@ -1,5 +1,6 @@
 import React, { useRef } from 'react';
 import { motion, useInView } from 'framer-motion';
+import { Link } from 'react-router-dom';
 import './mediaQ.css'
 export default function Footer() {
   const ref = useRef(null);
@@ -34,12 +35,9 @@ export default function Footer() {
           </div>
           <div className="icons text-white">
             <h6>Follow Us:</h6>
-            <i className="fa-brands fa-facebook me-2"></i>
-            <i className="fa-brands fa-twitter me-2"></i>
-            <i className="fa-brands fa-youtube me-2"></i>
-            <i className="fa-brands fa-linkedin me-2"></i>
-            <i className="fa-brands fa-instagram"></i>
-          </div>
+            <Link to="https://www.facebook.com/share/1DA1BxSGJz/"> <i className="fa-brands fa-facebook me-2 text-white"></i></Link>
+            <Link to="https://www.tiktok.com/@coldwellbankerrangers?_t=ZS-8wXhSrXc70r&_r=1"> <i className="fa-brands fa-tiktok me-2 text-white"></i></Link>
+            <Link to="https://www.instagram.com/coldwellbankerrangers?igsh=MTB2bXVtc2JrMjdxZQ=="> <i className="fa-brands fa-instagram me-2 text-white"></i></Link>              </div>
         </motion.div>
       </div>
     </div>

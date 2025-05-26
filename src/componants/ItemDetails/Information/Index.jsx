@@ -19,7 +19,7 @@ const Information = ({unit}) => {
         <AmenitiesAndFeatures/>
         <Location unit={unit} />
         <FloorAcoorition/>
-        <DownloadPDF path={unit.pdfUrl || '/files/1.pdf'}/>
+        <DownloadPDF path={unit.pdfUrl || '/files/Ogami - Brochure.pdf'}/>
     </div>
   )
 }
